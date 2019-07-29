@@ -1,0 +1,7 @@
+﻿@model System.Collections.Generic.Dictionary<string, string>
+<div>
+    @foreach (KeyValuePair<string, string> kvp in @Model)
+    {
+        <button><strong>@kvp.Key</strong> @kvp.Value</button>
+    }
+</div>
